@@ -134,7 +134,7 @@ body{
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .btn-afspraak{display: none;}
     .topnav a {display: none;}
     .btn-afspraak-resp{display: none;}
@@ -142,13 +142,17 @@ body{
         width: 100%;
        
     }
+    .icons{
+      display: flex;
+    }
+ 
     .topnav a.icon {
       float: right;
       display: block;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .topnav.responsive {
         position: relative;
         display: block;
@@ -161,6 +165,8 @@ body{
       top: 0;
       
     }
+
+
     .btn-afspraak-resp{display: block;}
     .topnav.responsive a {
       float: none;
@@ -179,7 +185,7 @@ body{
   /*end navbar*/
 
   /*title*/
-  .words {
+  #words {
     font-size: 2rem;
     text-align: center;
     position: relative;
@@ -189,4 +195,72 @@ body{
     z-index: 6;
     border-bottom: yellow solid 5px;
     width: fit-content;
+}
+/*white content*/
+
+
+#color{
+  color: red;
+}
+.underline-words{
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: yellow;
+  
+}
+.text-content{
+  display: flex;
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#right-title{
+  margin-top: 35px;
+  margin-left: 17%;
+  font-size: 0.8em;
+  max-height: 150px;
+  overflow: auto;
+}
+.icons{
+  display: flex;
+  margin-left: 12%;
+  margin-right: 9%;
+  justify-content: space-between;
+  margin-top: 50px;
+  overflow: hidden;
+  
+}
+@media screen and (max-width: 800px) {
+  .icons{
+    display: block;
+  }
+}
+.app-icon{
+  background-color: #373333;
+  width: fit-content;
+  padding: 16px 15px 15px 14px;
+  border-radius: 6px;
+  height: fit-content;
+  margin-bottom: 3px;
+}
+.icon-text{
+
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1rem;
+}
+.white-div{
+  padding-bottom: 50px;
+}
+/*dark-container*/
+.dark-container{
+  width: 100%;
+  height: 484px;
+  margin: 0;
+  background-color: black;
+  border-radius: 20px;
+
+  overflow: hidden;
+  
+
 }
